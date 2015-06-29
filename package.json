@@ -27,6 +27,18 @@
     "gulp-mocha": "^2.1.1",
     "gulp-plumber": "^1.0.1"
   },
+  "browserify": {
+    "transform": [
+      [
+        "babelify", {
+          "optional": [
+            "es7.classProperties",
+            "runtime"
+          ]
+        }
+      ]
+    ]
+  },
   "dependencies": {
     "bluebird": "^2.9.30",
     "immutable": "^3.7.3",
